@@ -3,12 +3,23 @@ import './App.css';
 import Header from './Component/Header/Header';
 import Shop from './Component/Header/Shop/Shop';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 function App() {
   return (
-    <div className="App">
-     <Header></Header>
-     <Shop></Shop>
-    </div>
+    <Router>
+    <Switch>
+      
+    <Route path="/">     <Header /> <Shop></Shop> </Route>
+
+    </Switch>
+    </Router>
+
   );
 }
 
