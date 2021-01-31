@@ -46,9 +46,6 @@ function Shop() {
 
     return (
         <div>
-            <div>
-      <Header></Header>
-      </div>
         <div className='shop-container'>
 
 
